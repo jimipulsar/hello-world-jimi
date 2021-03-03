@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+  <!-- MDB icon -->
+  <link rel="icon" href="{{asset('node_modules/img/mdb-favicon.ico')}}" type="image/x-icon">
+  <!-- Font Awesome -->
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{{asset('node_modules/css/bootstrap.min.css')}}">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="{{asset('node_modules/css/mdb.min.css')}}">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="{{asset('node_modules/css/style.css')}}">
+  <!-- MDBootstrap Datatables  -->
 </head>
 <body>
         <!--Main Navigation-->
