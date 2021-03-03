@@ -1,23 +1,257 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+<!-- Background image -->
+<div id="intro" class="bg-image vh-100 shadow-1-strong">
+  <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
+    <source class="h-100" src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+  </video>
+  <div class="mask"     style="
+  background: linear-gradient(
+    45deg,
+    rgba(29, 236, 197, 0.7),
+    rgba(91, 14, 214, 0.7) 100%
+  );
+">
+    <div class="container d-flex align-items-center justify-content-center text-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">Hello World</h1>
+        <a
+          class="btn btn-outline-light btn-lg m-2"
+          href="#crud"
+          role="button"
+          rel="nofollow"
+          target="_self"
+          >Entra</a>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
+<!-- Background image -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5" id="crud">
+<div class="container">
+  <!--Section: Content-->
+  <section>
+    <div class="row">
+      <div class="col-md-6 gx-5 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+          <img src="https://mdbootstrap.com/img/new/slides/031.jpg" class="img-fluid" />
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 gx-5 mb-4">
+        <h4><strong>Facilis consequatur eligendi</strong></h4>
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+          eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+          sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+        </p>
+        <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
+          nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam illum
+          alias, unde optio accusantium soluta, iusto molestiae adipisci et?
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--Section: Content-->
+
+  <hr class="my-5" />
+
+  <!--Section: Content-->
+  <section class="text-center">
+    <h4 class="mb-5"><strong>Facilis consequatur eligendi</strong></h4>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img
+              src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+              class="img-fluid"
+            />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the bulk of the
+              card's content.
+            </p>
+            <a href="#!" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Laravel 7 Hello World</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <style>
+      html, body {
+          background-color: #fff;
+          color: #636b6f;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 200;
+          height: 100vh;
+          margin: 0;
+      }
+
+      .full-height {
+          height: 100vh;
+      }
+
+      .flex-center {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+      }
+
+      .position-ref {
+          position: relative;
+      }
+
+      .top-right {
+          position: absolute;
+          right: 10px;
+          top: 18px;
+      }
+
+      .content {
+          text-align: center;
+      }
+
+      .title {
+          font-size: 84px;
+      }
+
+      .links > a {
+          color: #636b6f;
+          padding: 0 25px;
+          font-size: 13px;
+          font-weight: 600;
+          letter-spacing: .1rem;
+          text-decoration: none;
+          text-transform: uppercase;
+      }
+
+      .m-b-md {
+          margin-bottom: 30px;
+      }
+  </style>
+</head>
+<body>
+  <div class="flex-center position-ref full-height">
+      @if (Route::has('login'))
+          <div class="top-right links">
+              @auth
+                  <a href="{{ url('/home') }}">Home</a>
+              @else
+                  <a href="{{ route('login') }}">Login</a>
+
+                  @if (Route::has('register'))
+                      <a href="{{ route('register') }}">Register</a>
+                  @endif
+              @endauth
+          </div>
+      @endif
+
+      <div class="content">
+          <div class="title m-b-md">
+              Laravel
+          </div>
+
+          <div class="links">
+              <a href="https://laravel.com/docs">Docs</a>
+              <a href="https://laracasts.com">Laracasts</a>
+              <a href="https://laravel-news.com">News</a>
+              <a href="https://blog.laravel.com">Blog</a>
+              <a href="https://nova.laravel.com">Nova</a>
+              <a href="https://forge.laravel.com">Forge</a>
+              <a href="https://vapor.laravel.com">Vapor</a>
+              <a href="https://github.com/laravel/laravel">GitHub</a>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
+
+              src="https://mdbootstrap.com/img/new/standard/nature/023.jpg"
+              class="img-fluid"
+            />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the bulk of the
+              card's content.
+            </p>
+            <a href="#!" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img
+              src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+              class="img-fluid"
+            />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the bulk of the
+              card's content.
+            </p>
+            <a href="#!" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Section: Content-->
+</div>
+</main>
+<!--Main layout-->
+
+<!--Footer-->
+<footer class="bg-light text-lg-start">
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  © 2020 Copyright:
+  <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+</div>
+<!-- Copyright -->
+</footer>
 @endsection
