@@ -331,5 +331,19 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- jQuery -->
+  <script type="text/javascript" src="{{asset('node_modules/js/jquery.min.js')}}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{{asset('node_modules/js/popper.min.js')}}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{{asset('node_modules/js/bootstrap.min.js')}}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{{asset('node_modules/js/mdb.min.js')}}"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+  <!-- MDBootstrap Datatables  -->
+  <script type="text/javascript" src="{{asset('node_modules/js/addons/datatables2.min.js')}}"></script>
+
 </body>
 </html>
