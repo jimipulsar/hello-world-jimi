@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Faker\Generator as Faker;
 use App\User;
+use App\Role;
 
 class UsersTableSeeder extends Seeder
 {
@@ -11,13 +13,21 @@ class UsersTableSeeder extends Seeder
        *
        * @return void
        */
-      public function run()
+      public function run(Faker $faker)
       {
 
-          factory(App\User::class, 10)->create();
+
+
+          $user = new User();
+          $user->name = 'admin';
+          $user->email = 'admin@admin.com';
+          $user->password = bcrypt('password');
+          $user->save();
 
 
       }
+
+
 
 
 }
