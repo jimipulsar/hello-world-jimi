@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-        <!--Main Navigation-->
+  <!--Main Navigation-->
     <header>
       <style>
         /* Height for devices larger than 576px */
@@ -28,14 +28,10 @@
           color: #fff !important;
         }
       </style>
-
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
         <div class="container-fluid">
           <!-- Navbar brand -->
-          <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
-            <strong>MDB</strong>
-          </a>
           <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
             aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
@@ -51,7 +47,7 @@
             <ul class="navbar-nav d-flex flex-row">
               <!-- Icons -->
               <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+                <a class="nav-link" href="https://github.com/jimipulsar?tab=repositories" rel="nofollow" target="_blank">
                   <i class="fab fa-github"></i>
                 </a>
               </li>
