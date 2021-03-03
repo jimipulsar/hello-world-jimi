@@ -64,31 +64,23 @@
 
       <!-- Background image -->
       <div id="intro" class="bg-image vh-100 shadow-1-strong">
-        <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
-          <source class="h-100" src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
-        </video>
-        <div class="mask"     style="
-        background: linear-gradient(
-          45deg,
-          rgba(29, 236, 197, 0.7),
-          rgba(91, 14, 214, 0.7) 100%
-        );
-      ">
-          <div class="container d-flex align-items-center justify-content-center text-center h-100">
-            <div class="text-white">
-              <h1 class="mb-3">Hello World</h1>
-              <a
-                class="btn btn-outline-light btn-lg m-2"
-                href="#crud"
-                role="button"
-                rel="nofollow"
-                target="_self"
-                >Entra</a>
-
-            </div>
-          </div>
-        </div>
-      </div>
+       <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
+         <source class="h-100" src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+       </video>
+       <div class="mask"     style="background: linear-gradient(45deg,rgba(29, 236, 197, 0.7),rgba(91, 14, 214, 0.7) 100%);">
+         <div class="container d-flex align-items-center justify-content-center text-center h-100">
+           <div class="text-white">
+             <h1 class="mb-3">Hello World</h1>
+             <a class="btn btn-outline-light btn-lg m-2"
+               href="#crud"
+               role="button"
+               rel="nofollow"
+               target="_self">Visualizza Lista</a>
+               <a class="btn btn-outline-light btn-lg m-2" href="/login" target="_blank" role="button">Loggati</a>
+           </div>
+         </div>
+       </div>
+     </div>
       <!-- Background image -->
     </header>
     <!--Main Navigation-->
