@@ -88,8 +88,9 @@
           <h4 class="mb-5"><strong>Facilis consequatur eligendi</strong></h4>
           <div class="row">
             <div class="col-lg-4 col-md-12 mb-4">
-              @foreach($users as $user)
+
                 <div class="card">
+                  @foreach($users as $user)
                   <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                     <img
                       src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
@@ -107,9 +108,9 @@
                     </p>
                     <a href="#!" class="btn btn-primary">Button</a>
                   </div>
-
-                </div>
                   @endforeach
+                </div>
+
             </div>
           </div>
               {{$users->links()}}
