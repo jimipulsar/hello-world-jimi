@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Str;
 
-$DATABASE_URL = parse_url(getenv("postgres://hccgpgcsazyeip:32b8b8d58ad7fbe294f3e271d391a4ab6ca14238310bf713f450d4de21638323@ec2-54-228-9-90.eu-west-1.compute.amazonaws.com:5432/dfi9fn6jcugama"));
-
 return [
 
     /*
@@ -66,17 +64,18 @@ return [
         ],
 
         'pgsql' => [
-                'driver' => 'pgsql',
-                'host' => $DATABASE_URL["ec2-54-228-9-90.eu-west-1.compute.amazonaws.com"],
-                'port' => $DATABASE_URL["5432"],
-                'database' => $DATABASE_URL["dfi9fn6jcugama"],
-                'username' => $DATABASE_URL["hccgpgcsazyeip"],
-                'password' => $DATABASE_URL["32b8b8d58ad7fbe294f3e271d391a4ab6ca14238310bf713f450d4de21638323"],
-                'charset' => 'utf8',
-                'prefix' => '',
-                'schema' => 'public',
-                'sslmode' => 'require',
-            ],
+            'driver' => 'pgsql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '5432'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'schema' => 'public',
+        ],
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
