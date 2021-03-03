@@ -18,9 +18,9 @@ class UsersTableSeeder extends Seeder
 
         for ($i=0; $i < 10; $i++) {
           $user = new User;
-          $user->name = 'admin';
-          $user->email = 'admin@admin.com';
-          $user->password = bcrypt('password');
+          $user->name = $faker->sentence(10);
+          $user->email = $faker->email(10);
+          $user->password = $faker->password(10);
           $user->save();
         }
 
