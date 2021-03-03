@@ -13,17 +13,6 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-  <!-- MDB icon -->
-  <link rel="icon" href="{{asset('node_modules/img/mdb-favicon.ico')}}" type="image/x-icon">
-  <!-- Font Awesome -->
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="{{asset('node_modules/css/bootstrap.min.css')}}">
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="{{asset('node_modules/css/mdb.min.css')}}">
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="{{asset('node_modules/css/style.css')}}">
-  <!-- MDBootstrap Datatables  -->
 </head>
 <body>
         <!--Main Navigation-->
@@ -331,19 +320,5 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/script.js"></script>
-
-    <!-- jQuery -->
-  <script type="text/javascript" src="{{asset('node_modules/js/jquery.min.js')}}"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="{{asset('node_modules/js/popper.min.js')}}"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="{{asset('node_modules/js/bootstrap.min.js')}}"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="{{asset('node_modules/js/mdb.min.js')}}"></script>
-  <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
-  <!-- MDBootstrap Datatables  -->
-  <script type="text/javascript" src="{{asset('node_modules/js/addons/datatables2.min.js')}}"></script>
-
 </body>
 </html>
