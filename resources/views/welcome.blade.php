@@ -112,6 +112,7 @@
                   @endforeach
             </div>
           </div>
+              {{$users->links()}}
         </section>
         <!--Section: Content-->
       </div>
