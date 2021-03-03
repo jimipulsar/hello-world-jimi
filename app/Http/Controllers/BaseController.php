@@ -12,7 +12,7 @@ class BaseController extends Controller
   }
 
   public function lista() {
-      $users = User::orderBy('id','ASC')->paginate(5);
+      $users = User::orderBy('id','ASC')->paginate(3);
       return view('welcome', compact('users'));
   }
 }
