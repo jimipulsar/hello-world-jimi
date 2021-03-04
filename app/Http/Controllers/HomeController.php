@@ -24,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+      // Creo una vista di utenti in ordine decrescente dall'ultimo record aggiunto
       $users = User::orderBy('created_at','DESC')->paginate(3);
       return view('home', compact('users'));
     }

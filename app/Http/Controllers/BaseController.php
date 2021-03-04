@@ -12,6 +12,7 @@ class BaseController extends Controller
   }
 
   public function lista() {
+      // Creo una vista di utenti in ordine decrescente dall'ultimo record aggiunto
       $users = User::orderBy('created_at','DESC')->paginate(3);
       return view('welcome', compact('users'));
   }
