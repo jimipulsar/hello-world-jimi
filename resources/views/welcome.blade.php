@@ -102,7 +102,7 @@
                     <p class="card-text">
                     {{$user->email}}
                     </p>
-                    <a href="#!" class="btn btn-primary">Button</a>
+
                   </div>
                 </div>
             </div>
