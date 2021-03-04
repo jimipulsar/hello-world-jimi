@@ -15,4 +15,9 @@ class BaseController extends Controller
       $users = User::orderBy('id','ASC')->paginate(3);
       return view('welcome', compact('users'));
   }
+
+  public function home() {
+      $users = User::orderBy('id','ASC')->paginate(3);
+      return view('home', compact('users'));
+  }
 }
