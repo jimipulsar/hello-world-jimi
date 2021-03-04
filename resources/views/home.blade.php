@@ -35,7 +35,10 @@
       </div>
         @endforeach
     </div>
-    {{$users->links()}}
+    <hr>
+    <div class="d-flex justify-content-center">
+       {{$users->links()}}
+     </div>
   </section>
   <!--Section: Content-->
 </div>
