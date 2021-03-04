@@ -12,12 +12,9 @@ class BaseController extends Controller
   }
 
   public function lista() {
-      $users = User::orderBy('id','ASC')->paginate(3);
+      $users = User::orderBy('created_at','DESC')->paginate(3);
       return view('welcome', compact('users'));
   }
 
-  public function home() {
-      $users = User::orderBy('id','ASC')->paginate(3);
-      return view('home', compact('users'));
-  }
+
 }
