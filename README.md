@@ -2,11 +2,11 @@
 
 Creazione di una pagina Hello World con un elenco di utenti
 
-## Deploy Laravel
+## Deploy
 
 Questa demo è stata realizzata in Cloud su Heroku
 
-Visualizza <a href="http://hello-world-jimi.herokuapp.com/" class="btn btn-info" role="button" target="_blank">DEMO</a>
+Visualizza <a href="http://hello-world-jimi.herokuapp.com/" target="_blank">DEMO</a>
 
 ## Tecnologie utilizzate
 
