@@ -85,7 +85,7 @@
       <div class="container">
         <!--Section: Content-->
         <section class="text-center">
-            <h4 class="mb-5"><strong>Lista Utenti</strong></h4>
+          <h4 class="mb-5"><strong>Lista Utenti</strong></h4>
           <div class="row">
             @foreach($users as $user)
             <div class="col-lg-4 col-md-12 mb-4">
