@@ -117,7 +117,7 @@
     <!--Footer-->
     <footer class="bg-light text-lg-start">
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgb(242, 248, 255)">
+      <div class="text-center p-3" style="background-color: rgb(108, 167, 202)">
         Developed by Pietro Ricci
         <a class="nav-link" href="https://github.com/jimipulsar?tab=repositories" rel="nofollow" target="_blank">
           <i class="fab fa-github"></i> Github
