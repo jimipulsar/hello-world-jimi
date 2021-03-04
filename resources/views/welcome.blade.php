@@ -27,15 +27,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarExample01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#intro">Home</a>
-              </li>
             </ul>
             <ul class="navbar-nav d-flex flex-row">
               <!-- Icona Repository personale Github -->
               <li class="nav-item me-3 me-lg-0">
                 <a class="nav-link" href="https://github.com/jimipulsar?tab=repositories" rel="nofollow" target="_blank">
-                  <i class="fab fa-github"></i>
+                  <i class="fab fa-github"></i> My Github
                 </a>
               </li>
             </ul>
