@@ -51,10 +51,10 @@
            <div class="text-white">
              <h1 class="mb-3">Hello World</h1>
              <a class="btn btn-outline-light btn-lg m-2"
-               href="#crud"
+               href="#utenti"
                role="button"
                rel="nofollow"
-               target="_self">Visualizza Lista</a>
+               target="_self">Visualizza elenco utenti</a>
                <a class="btn btn-outline-light btn-lg m-2" href="/login" target="_blank" role="button">Loggati</a>
            </div>
          </div>
@@ -65,7 +65,7 @@
     <!--Main Navigation-->
 
     <!--Main layout-->
-    <main class="mt-5" id="crud">
+    <main class="mt-5" id="utenti">
       <div class="container">
         <!--Section: Content-->
         <section class="text-center">
