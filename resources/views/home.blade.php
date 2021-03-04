@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('content')
-
 <!--Main layout-->
 <main class="mt-5" id="crud">
 <div class="container">
@@ -19,15 +17,12 @@
               <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
             </a>
           </div>
-
           <div class="card-body">
             <h5 class="card-title">{{$user->name}}</h5>
             <p class="card-text">
             {{$user->email}}
             </p>
-
           </div>
-
         </div>
       </div>
         @endforeach
@@ -41,5 +36,4 @@
 </div>
 </main>
 <!--Main layout-->
-
 @endsection

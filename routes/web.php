@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Auth::routes();
-
+Route::get('/', 'BaseController@lista')->name('lista');
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/', 'BaseController@lista')->name('lista');
+Auth::routes();

@@ -6,7 +6,6 @@ use App\User;
 
 class UsersTableSeeder extends Seeder
 {
-
       /**
        * Run the database seeds.
        *
@@ -14,8 +13,7 @@ class UsersTableSeeder extends Seeder
        */
       public function run(Faker $faker)
       {
-
-
+        // Creo 6 record di utenti generati in maniera casuale
         for ($i=0; $i < 6; $i++) {
           $user = new User;
           $user->name = $faker->sentence(10);
@@ -23,11 +21,5 @@ class UsersTableSeeder extends Seeder
           $user->password = $faker->password(10);
           $user->save();
         }
-
-
       }
-
-
-
-
 }

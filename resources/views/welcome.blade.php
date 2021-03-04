@@ -41,11 +41,9 @@
               <li class="nav-item active">
                 <a class="nav-link" aria-current="page" href="#intro">Home</a>
               </li>
-
             </ul>
-
             <ul class="navbar-nav d-flex flex-row">
-              <!-- Icons -->
+              <!-- Icona Repository personale Github -->
               <li class="nav-item me-3 me-lg-0">
                 <a class="nav-link" href="https://github.com/jimipulsar?tab=repositories" rel="nofollow" target="_blank">
                   <i class="fab fa-github"></i>
@@ -57,7 +55,7 @@
       </nav>
       <!-- Navbar -->
 
-      <!-- Background image -->
+      <!-- Immagine di sfondo -->
       <div id="intro" class="bg-image vh-100 shadow-1-strong">
        <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
          <source class="h-100" src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
@@ -76,7 +74,7 @@
          </div>
        </div>
      </div>
-      <!-- Background image -->
+      <!-- Immagine di sfondo -->
     </header>
     <!--Main Navigation-->
 
@@ -96,13 +94,11 @@
                       <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                     </a>
                   </div>
-
                   <div class="card-body">
                     <h5 class="card-title">{{$user->name}}</h5>
                     <p class="card-text">
                     {{$user->email}}
                     </p>
-
                   </div>
                 </div>
             </div>
@@ -120,7 +116,6 @@
 
     <!--Footer-->
     <footer class="bg-light text-lg-start">
-
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2020 Copyright:
@@ -129,9 +124,8 @@
       <!-- Copyright -->
     </footer>
     <!--Footer-->
-    <!-- MDB -->
+
+    <!-- MDB Javascript-->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
