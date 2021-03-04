@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-      $users = User::orderBy('id','ASC')->paginate(3);
+      $users = User::orderBy('created_at','DESC')->paginate(3);
       return view('home', compact('users'));
     }
 }
