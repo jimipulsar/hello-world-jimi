@@ -1,0 +1,14 @@
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #intro {
+    margin-top: -58.59px;
+  }
+}
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+#footer {
+  height:84vh;
+  background-image: linear-gradient(140deg, #FFF 0%, #D2ECFB 50%, #78C0FF 75%);
+}

@@ -17,17 +17,6 @@
 <body>
   <!--Main Navigation-->
     <header>
-      <style>
-        /* Height for devices larger than 576px */
-        @media (min-width: 992px) {
-          #intro {
-            margin-top: -58.59px;
-          }
-        }
-        .navbar .nav-link {
-          color: #fff !important;
-        }
-      </style>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
         <div class="container-fluid">
